@@ -56,7 +56,7 @@ jobs:
           TAG=0.1.<< pipeline.number >>
           git clone https://github.com/randyjohnston/argocd-goof.git
           cd argocd-goof
-          sed -i 's/\(juice-shop\)\(.*\)/\1:'$TAG'/' goof/goof-deployment.yaml
+          sed -i 's/\(rajohnston\/snyk-juice-shop\)\(.*\)/\1:'$TAG'/' goof/goof-deployment.yaml
           git config user.email "randy.johnston@snyk.io"
           git config user.name "randyjohnston"
           git add goof/goof-deployment.yaml
